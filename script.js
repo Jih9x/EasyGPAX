@@ -714,17 +714,6 @@ document.addEventListener('DOMContentLoaded', function() {
             0% { background-position: 200% 0; }
             100% { background-position: -200% 0; }
         }
-        .calculating {
-            animation: calculating 0.5s infinite;
-        }
-        @keyframes calculating {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        .submitting {
-            animation: submitting 0.5s infinite;
-        }
         @keyframes submitting {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
