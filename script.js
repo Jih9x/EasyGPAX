@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 768) {
             navbar.style.height = 'auto';
             container.style.paddingTop = `${navbar.offsetHeight}px`;
+            container.style.margin = '0 auto'; // Center container horizontally
         } else {
             navbar.style.height = '60px';
             container.style.paddingTop = '60px';
+            container.style.margin = '0'; // Reset margin for larger screens
         }
     }
 
