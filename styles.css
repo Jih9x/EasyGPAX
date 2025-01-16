@@ -429,6 +429,7 @@ footer {
     .container {
         width: 95%;
         padding: 15px;
+        margin: 0 auto; /* Center container horizontally */
     }
 
     h1 {
@@ -452,6 +453,33 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #bottomRightButtons {
+        bottom: 60px; /* ยกปุ่มขึ้นมาเพื่อไม่บัง */
+    }
+
+    .container {
+        margin-top: 20px; /* เพิ่มพื้นที่ด้านบนหลัง navbar */
+        padding-bottom: 80px; /* เพิ่มพื้นที่ด้านล่างสำหรับปุ่ม */
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 999;
     }
 }
 
